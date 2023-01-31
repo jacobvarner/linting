@@ -1,0 +1,13 @@
+{
+  "output": "../CHANGELOG.md",
+  "commitLimit": false,
+  "startingVersion": "v0.1.1",
+  "hideCredit": true,
+  "sortCommits": "date",
+  "template": "auto.changelog.template.hbs",
+  "replaceText": {
+    "chore:\\s|feature:\\s|fix:\\s": "",
+    "(\\[#)(\\d{9})(])(.*)": "$4 [`#$2`](https://www.pivotaltracker.com/story/show/$2)",
+    "(.*[0]{9}.*)": ""
+  }
+}
